@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable = no" />
+    <link rel="stylesheet/less" type="text/css" href="{{ static_url("css/style.less") }}" />
+    <script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
+    <title>Learning Python</title>
+</head>
+<body>
+    <header>
+    <div id="navbar">
+    <p>
+        unicooo
+    </p>
+    </div>
+    <div id="navbar_inside">
+        <ul class="navbar_ul">
+            <li class="navbar_li"><a href="#">首页</a></li>
+            <li class="navbar_li"><a href="#">公众活动</a></li>
+            <li class="navbar_li"><a href="#">个人活动</a></li>
+            <li class="navbar_li"><a href="#">注册登录</a></li>
+        </ul>
+    </div>
+    
+    </header>
+    <content>
+        {% block body %}{% end %}
+    </content>
+    <footer>
+        {% set website = "<a href='http://www.itdiffer.com'>welcome to my website</a>" %}
+        {% raw website %}
+    </footer>
+   <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script> 
+   <script src="{{static_url("js/script.js")}}"></script>
+</body>
+</html>
